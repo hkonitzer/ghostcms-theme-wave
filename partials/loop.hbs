@@ -1,4 +1,5 @@
 <article class="{{post_class}}"{{#if og_description}} data-url="{{og_description}}"{{/if}} data-id="{{comment_id}}">
+    {{#if feature_image}}
     <div class="post-media">
         {{#if og_description}}
             <div class="post-play js-play">
@@ -16,6 +17,7 @@
             </a>
         </div>
     </div>
+    {{/if}}
     <div class="post-wrapper">
         <header class="post-header">
             {{> "post-meta"}}
