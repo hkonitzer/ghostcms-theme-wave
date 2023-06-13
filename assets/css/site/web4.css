@@ -2,3 +2,11 @@
     float: left;
     padding-right: 0.5em;
 }
+.float-r_pl {
+    float: right;
+    padding-left: 0.5em;
+}
+
+.bolderfont {
+    font-weight: bolder;
+}
