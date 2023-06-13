@@ -24,26 +24,6 @@
             {{content}}
         </div>
 
-        <div class="gh-canvas">
-            <div class="author-list">
-                <h3 class="author-list-title">
-                    {{#if og_description}}Hosted by:{{else}}Written by:{{/if}}
-                </h3>
-                {{#foreach authors}}
-                    {{> "author-box"}}
-                {{/foreach}}
-            </div>
-            {{#if comments}}
-                <section class="gh-comments">
-                    <header class="gh-comments-header">
-                        <h3 class="gh-comments-title author-list-title">Member discussion:</h3>
-                        {{comment_count class="gh-comments-count"}}
-                    </header>
-                    {{comments title="" count=false}}
-                </section>
-            {{/if}}
-        </div>
-
     </article>
 </main>
 
