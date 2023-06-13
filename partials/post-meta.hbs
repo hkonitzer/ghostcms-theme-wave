@@ -1,9 +1,12 @@
 <div class="post-meta">
-    <span class="post-meta-item post-meta-date">
+    {{#has tag="Info"}}
+    {{else}}
+        <span class="post-meta-item post-meta-date">
         <time datetime="{{date format="YYYY-MM-DD"}}">
             {{date published_at}}
         </time>
     </span>
+    {{/has}}
     {{#if tags}}
         <span class="post-meta-item post-meta-tags">
             {{#foreach tags}}
