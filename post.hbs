@@ -13,7 +13,10 @@
             <header class="post-header gh-canvas">
                 {{> "post-meta"}}
                 <h1 class="post-title">{{title}}</h1>
+                {{#has tag="Info"}}
+                {{else}}
                 {{> "feature-image"}}
+                {{/has}}
             </header>
         {{/if}}
 
